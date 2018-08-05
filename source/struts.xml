@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC    
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"    
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+<constant name="struts.devMode" value="false" />
+
+<constant name="struts.custom.i18n.source"  value="ApplicationResources" />
+
+<package name="1" extends="struts-default" namespace="/">
+<action name="LOGIN" class="aa.login">
+<result name="success">feedback.jsp</result>
+<result name="false">login.jsp</result>
+</action>
+<action name="FILESERCH" class="bb.fileserch">
+<result name="success">filelist.php</result>
+<result name="false">apolo.php</result>
+</action>
+</package>
+
+</struts>
